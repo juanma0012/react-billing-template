@@ -1,25 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import InvoiceRevision from './components/InvoiceRevision'
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { invoice: {} };
+  }
+  componentDidMount() {
+    /**
+     * Here should be the API call to get the Invoice data.
+     */
+    fetch("/mock/data.json")
+      .then(res => res.json())
+      .then(
+      (result) => {
+        this.setState({
+          invoice: result
+        });
+        console.log(result);
+      },
+      (error) => {
+        this.setState({
+          error
+        });
+      }
+      )
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <InvoiceRevision invoice={this.state.invoice}/>
       </div>
     );
   }

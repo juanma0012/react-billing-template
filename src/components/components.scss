@@ -1,0 +1,37 @@
+
+.InvoiceRevision{
+    .invoice-number{
+        font-size: 1.5em;
+    }
+    .revision-section{
+        background-color: white;
+        border: 1px solid #ebebeb;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 #ebebeb, 0 1px 4px 0 #ebebeb;
+
+        .title-section{
+            padding: 1em;
+            border-bottom: 1px solid #ebebeb;
+        }
+        .left-section{
+            padding: 1em;
+            border-right: 1px solid #ebebeb;
+        }
+        .mid-section{
+            padding: 1em;
+            border-right: 1px solid #ebebeb;
+            .bill-to{
+                text-align: center;
+                font-size: 2em;
+                font-style: italic;
+            }
+        }
+        .right-section{
+            padding-top: 1em;
+            .balance{
+                font-size: 2em;
+                color: #ff9900;
+            }
+        }
+    }
+}
