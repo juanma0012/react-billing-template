@@ -1,0 +1,49 @@
+html {
+    font-size: 14px;
+}
+body{
+    background-color: #f8fbff;
+}
+@media (min-width: 768px) {
+    html {
+        font-size: 0.8em;
+    }
+    .fa-2x{
+        size: 0.7em;
+    }
+}
+.container {
+    max-width: 960px;
+}
+.fa, .far {
+    color: #C3C3C3;
+}
+.fa-bell{
+    color:black;
+}
+.bell-notification-icon{
+    background-color: red;
+    font-size: 0.5em;
+    display: block;
+    padding: 0 0.3em;
+    right: 0;
+    left: initial;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 2px solid white;
+}
+.dropdown-circle-button{
+    border: 2px solid gray;
+    padding: 0.1em 0.4em;
+    margin: 0.2em;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.menu-font>a{
+    color: black;
+}
+.menu-font>a:hover{
+    color: #0eb2db;
+    text-decoration-line: none;
+}

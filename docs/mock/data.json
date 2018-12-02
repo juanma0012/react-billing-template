@@ -1,0 +1,34 @@
+{
+    "number": "S03834754",
+    "date": 1533038400,
+    "dueDate": 1533038400,
+    "terms": "Net 0",
+    "billTo" : "Company, Inc",
+    "balance": 452.45,
+    "items": [
+        "Item 1",
+        "Item 2",
+        "Item 3",
+        "Item 4",
+        "Item 5",
+        "Item 6",
+        "Item 7"
+    ],
+    "status": "active",
+    "method": "Multimodal",
+    "capacity": "LCL",
+    "drayage": [
+        "Pickup",
+        "Delivery"
+    ],
+    "incoterms":"FOB",
+    "serviceOptions":[
+        "Deconsolidation",
+        "Customs Clearance"
+    ],
+    "hazardousCommodities": [
+        "Lithium Batteries",
+        "Hazmat",
+        "Other"
+    ]
+}
