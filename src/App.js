@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import InvoiceRevision from './components/InvoiceRevision'
 import InvoiceCanvas from './components/InvoiceCanvas'
+import InvoiceOverview from './components/InvoiceOverview'
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { invoice: {} };
+    this.state = { invoice: {hazardousCommodities:[], serviceOptions:[]} };
   }
   componentDidMount() {
     /**
@@ -33,6 +34,7 @@ class App extends Component {
       <div className="App">
         <InvoiceRevision invoice={this.state.invoice}/>
         <InvoiceCanvas invoice={this.state.invoice}/>
+        <InvoiceOverview invoice={this.state.invoice}/>
       </div>
     );
   }

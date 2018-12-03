@@ -58,3 +58,27 @@ $balance-text-color: #ff9900;
         box-shadow: 0 1px 2px 0 $section-border-color, 0 1px 4px 0 $section-border-color;
     }
 }
+
+.InvoiceOverview{
+    margin-top: 2em;
+    .overview-section{
+        background-color: white;
+        border: 1px solid $section-border-color;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 $section-border-color, 0 1px 4px 0 $section-border-color;
+        .title-section{
+            padding: 1em;
+            border-bottom: 1px solid $section-border-color;
+        }
+        .left-section{
+            padding: 1em;
+            border-right: 1px solid $section-border-color;
+        }
+        .right-section{
+            padding-top: 1em;
+        }
+        .active-style, .fa-check{
+            color: #09ce6b;
+        }
+    }
+}
