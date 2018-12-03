@@ -1,6 +1,12 @@
 {
   "name": "react-billing-template",
   "version": "0.1.0",
+  "homepage": "https://juanma0012.github.io/react-billing-template",
+  "author": {
+    "name": "Juan Sanchez",
+    "email": "juanma0012@gmail.com",
+    "url": "https://www.linkedin.com/in/juanmanuels"
+  },
   "private": true,
   "dependencies": {
     "node-sass": "^4.10.0",
@@ -13,7 +19,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -23,5 +31,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }

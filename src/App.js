@@ -13,7 +13,7 @@ class App extends Component {
     /**
      * Here should be the API call to get the Invoice data.
      */
-    fetch("/mock/data.json")
+    fetch(`${process.env.PUBLIC_URL}/mock/data.json`)
       .then(res => res.json())
       .then(
       (result) => {
