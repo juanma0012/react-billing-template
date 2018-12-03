@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import InvoiceRevision from './components/InvoiceRevision'
+import InvoiceCanvas from './components/InvoiceCanvas'
 import './App.css';
 
 class App extends Component {
@@ -31,6 +32,7 @@ class App extends Component {
     return (
       <div className="App">
         <InvoiceRevision invoice={this.state.invoice}/>
+        <InvoiceCanvas invoice={this.state.invoice}/>
       </div>
     );
   }
