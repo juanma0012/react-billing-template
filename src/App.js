@@ -20,7 +20,6 @@ class App extends Component {
         this.setState({
           invoice: result
         });
-        console.log(result);
       },
       (error) => {
         this.setState({
