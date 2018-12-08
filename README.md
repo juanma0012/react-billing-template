@@ -2,6 +2,9 @@
 `Author` Juan Sanchez.<br>
 It contains a basic reactjs example using bootstrap library and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## App Running on GitHub pages
+[App](https://juanma0012.github.io/react-billing-template/)
+
 ## Available Scripts
 
 In the project directory, you can run:
