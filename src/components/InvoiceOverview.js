@@ -8,13 +8,13 @@ const InvoiceOverview = ({ invoice }) => (
             <div className="font-weight-bold title-section">
                 OVERVIEW
             </div>
-            <div className="d-flex flex-row">
-                <div className="left-section col-sm container">
-                    <div className="d-flex flex-row mb-2">
-                        <div className="col-sm">
+            <div className="d-flex flex-column flex-md-row">
+                <div className="left-section flex-fill ">
+                    <div className="d-flex mb-2">
+                        <div className="w-50">
                             Status
                         </div>
-                        <div className="col-sm text-right font-weight-bold" >
+                        <div className="text-right font-weight-bold" >
                             {invoice.status === "active" &&
                                 <span className="active-style">
                                 <i className="fa mr-2 fa-check"></i>Active
@@ -27,45 +27,45 @@ const InvoiceOverview = ({ invoice }) => (
                             }
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-1">
-                        <div className="col-sm">
+                    <div className="d-flex mb-1">
+                        <div className="w-50">
                             Method
                         </div>
-                        <div className="col-sm text-right font-weight-bold">
+                        <div className="text-right font-weight-bold">
                             {invoice.method}
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-1">
-                        <div className="col-sm">
+                    <div className="d-flex mb-1">
+                        <div className="w-50">
                             Capacity
                         </div>
-                        <div className="col-sm text-right font-weight-bold">
+                        <div className="text-right font-weight-bold">
                             {invoice.capacity}
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-2">
-                        <div className="col-sm">
+                    <div className="d-flex mb-2">
+                        <div className="w-50">
                             Drayage
                         </div>
-                        <div className="col-sm text-right font-weight-bold">
+                        <div className="text-right font-weight-bold">
                             {invoice.drayage}
                         </div>
                     </div>
                 </div>
-                <div className="left-section col-sm container">
-                    <div className="d-flex flex-row mb-2">
-                        <div className="col-sm">
+                <div className="left-section flex-fill">
+                    <div className="d-flex mb-2">
+                        <div className="w-50">
                             Incoterms
                         </div>
-                        <div className="col-sm text-right font-weight-bold" >
+                        <div className="text-right font-weight-bold" >
                             {invoice.incoterms}
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-1">
-                        <div className="col-sm">
+                    <div className="d-flex mb-1">
+                        <div className="w-50">
                             Service Options
                         </div>
-                        <div className="col-sm text-right font-weight-bold">
+                        <div className="text-right font-weight-bold">
                             {invoice.serviceOptions.map((item, index) =>
                                 <span key={index}>{item}
                                     {invoice.serviceOptions.length - 1 !== index &&
@@ -75,11 +75,11 @@ const InvoiceOverview = ({ invoice }) => (
                             )}
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-1">
-                        <div className="col-sm">
+                    <div className="d-flex mb-1">
+                        <div className="w-50">
                             Hazardous or forbidden commodities
                         </div>
-                        <div className="col-sm text-right font-weight-bold">
+                        <div className="text-right font-weight-bold">
                             {invoice.hazardousCommodities.map((item, index) =>
                                 <span key={index}>{item}
                                     {invoice.hazardousCommodities.length - 1 !== index &&

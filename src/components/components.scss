@@ -28,7 +28,7 @@ $balance-text-color: #ff9900;
             }
         }
         .right-section{
-            padding-top: 1em;
+            padding: 1em;
             .balance{
                 font-size: 2em;
                 color: $balance-text-color;
@@ -56,6 +56,9 @@ $balance-text-color: #ff9900;
         border: 1px solid $section-border-color;
         border-radius: 2px;
         box-shadow: 0 1px 2px 0 $section-border-color, 0 1px 4px 0 $section-border-color;
+        .img-max-width{
+            max-width: -webkit-fill-available;
+        }
     }
 }
 

@@ -18,12 +18,12 @@ class InvoiceCanvas extends React.Component {
         if (section === "Diagram") {
             content =
                 <div className="content justify-content-center d-flex">
-                    <img src={`${process.env.PUBLIC_URL}/images/diagram.png`}/>
+                    <img  class="img-max-width" src={`${process.env.PUBLIC_URL}/images/diagram.png`}/>
                 </div>;
         } else {
             content =
                 <div className="content justify-content-center d-flex">
-                    <img src={`${process.env.PUBLIC_URL}/images/map.png`}/>
+                    <img  class="img-max-width" src={`${process.env.PUBLIC_URL}/images/map.png`}/>
                 </div>;
         }
         return (

@@ -5,10 +5,10 @@ import './components.scss';
 const InvoiceRevision = ({ invoice }) => (
     <div className=" InvoiceRevision d-flex flex-column">
         <div className="flex-row">
-            <h1 className="d-inline-block">
+            <h1 className="d-inline-flex">
                 Invoice
             </h1>
-            <p className="ml-3 d-inline-block invoice-number">
+            <p className="ml-3 d-inline-flex invoice-number">
                 <span data-placement="top" data-toggle="tooltip" title="Invoice Number">
                     {invoice.number}
                 </span>
@@ -18,42 +18,42 @@ const InvoiceRevision = ({ invoice }) => (
             <div className="font-weight-bold title-section">
                 INVOICE - REVISION
             </div>
-            <div className="d-flex flex-row">
-                <div className="left-section col-sm container">
-                    <div className="d-flex flex-row mb-2">
-                        <div className="col-sm">
+            <div className="d-flex flex-column flex-md-row">
+                <div className="left-section flex-fill ">
+                    <div className="d-flex mb-2">
+                        <div class="w-50">
                             Invoice #
                         </div>
-                        <div className="col-sm text-right font-weight-bold" >
+                        <div className="text-right font-weight-bold" >
                             {invoice.number}
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-1">
-                        <div className="col-sm">
+                    <div className="d-flex mb-1">
+                        <div class="w-50">
                             Date
                         </div>
-                        <div className="col-sm text-right font-weight-bold">
+                        <div className="text-right font-weight-bold">
                             {(new Date(invoice.date * 1000).toLocaleDateString())}
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-1">
-                        <div className="col-sm">
+                    <div className="d-flex mb-1">
+                        <div class="w-50">
                             Due Date
                         </div>
-                        <div className="col-sm text-right font-weight-bold">
+                        <div className="text-right font-weight-bold">
                             {(new Date(invoice.dueDate * 1000).toLocaleDateString())}
                         </div>
                     </div>
-                    <div className="d-flex flex-row mb-2">
-                        <div className="col-sm">
+                    <div className="d-flex mb-2">
+                        <div class="w-50">
                             Terms
                         </div>
-                        <div className="col-sm text-right font-weight-bold">
+                        <div className="text-right font-weight-bold">
                             {invoice.terms}
                         </div>
                     </div>
                 </div>
-                <div className="mid-section col-sm">
+                <div className="mid-section flex-fill ">
                     <div className="font-weight-bold">
                         Bill To
                     </div>
@@ -61,7 +61,7 @@ const InvoiceRevision = ({ invoice }) => (
                         {invoice.billTo}
                     </div>
                 </div>
-                <div className="right-section col-sm">
+                <div className="right-section flex-fill ">
                     <div className="font-weight-bold">
                         New Balance upon Re-booking
                     </div>
